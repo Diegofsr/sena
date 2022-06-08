@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    font-size: 16px;
+    background-image: url(../assets/mechanic-presenting-something.jpg);
+     background-size: 160rem;
+     background-repeat: no-repeat;
+     width: 120rem;
+     height: 80rem;
+}
+
