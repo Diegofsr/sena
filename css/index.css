@@ -1,43 +1,6 @@
-/**{
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}*/
-
- /**body{
-    height: 100vh;
-    background-image: url(../assets/mechanic-presenting-something.jpg);
-    background-repeat: no-repeat;
+body{
+    background-image: url(../assets/warehouse-worker-checking-inventory-his-tablet-while-walking-large-storage-department-with-shelves-packages-background.jpg);
     background-size: cover;
-}*/
-
-.navegacion{
-    position: fixed;
-    width: 2rem;
-    height: 100%;
-    background-color: black (255,255,255,0.596);
-    transition: 0.5s;
-    overflow: hidden;
-    padding: 10px 50px;
-    height: 100px;
-    width: 100px;
-}
-
-.navegacion:hover{
-    width: 20rem;
-}
-.navegacion ul{
-     position: absolute;
-     left: 0;
-     width: 100%;
-}
-.navegacion ul li{
-    width: 100%;
-    list-style: none;
-} 
-
-li:hover{
-   background:#52c571b2; 
-   align-items: center;
+    height: 100vh;
+    background-repeat: no-repeat;
 }
