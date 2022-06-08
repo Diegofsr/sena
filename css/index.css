@@ -14,3 +14,30 @@ body{
      height: 80rem;
 }
 
+.navegacion{
+    position: fixed;
+    width: 2rem;
+    height: 100%;
+    background-color: black (255,255,255,0.596);
+    transition: 0.5s;
+    overflow: hidden;
+    padding: 3rem;
+}
+
+.navegacion:hover{
+    width: 20rem;
+}
+.navegacion ul{
+     position: absolute;
+     left: 0;
+     width: 100%;
+}
+.navegacion ul li{
+    width: 100%;
+    list-style: none;
+} 
+
+li:hover{
+   background:#52c571b2; 
+   align-items: center;
+}
