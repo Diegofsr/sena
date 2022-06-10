@@ -20,3 +20,6 @@ section{
     display: flex;
     align-items: flex-start;
 }
+h1{
+    margin-left:20vh;
+}
