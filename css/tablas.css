@@ -30,5 +30,5 @@ button{
     margin-left: 110vh;
 }
 .header-h1{
-    display: flex;
+    position: absolute;
 }
