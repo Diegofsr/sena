@@ -10,3 +10,12 @@ table th{
 table td{
     border: 1px solid;
 }
+
+input{
+    font: inherit;
+}
+section{
+    min-height: 20vh;
+    display: flex;
+    align-items: flex-start;
+}
