@@ -34,24 +34,6 @@ button{
     text-align: center; 
     left: 100vh; 
 }
-.footer{
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    color: #fff;
-    padding-left: 5px;
-}
-
-.footer_copy{
-    letter-spacing: 1px;
-}
-
-.footer_link{
-    color: #fff;
-    letter-spacing: 1px;
-}
 
 @media (min-width: 576px){
     .login{
