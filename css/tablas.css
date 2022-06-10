@@ -19,6 +19,7 @@ section{
     min-height: 10vh;
     display: flex;
     align-items: flex-start;
+    margin-left:15vh;
 }
 h1{
     margin-left:20vh;
