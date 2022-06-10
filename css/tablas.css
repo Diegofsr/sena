@@ -34,6 +34,10 @@ button{
     width:72%;
     color: #fff;
 }
+
+.text-btn{
+    color: #000;
+}
 .footer{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
