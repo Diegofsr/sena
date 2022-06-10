@@ -31,7 +31,8 @@ button{
     box-shadow: 2px 4px 15px 0 #000;
 }
 .text-navbar{
-    text-align: center;  
+    text-align: center; 
+    left: 100vh; 
 }
 
 @media (min-width: 576px){
