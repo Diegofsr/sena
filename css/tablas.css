@@ -32,6 +32,7 @@ button{
 }
 .text-navbar{ 
     display: inline-block;
+    color: #fff;
 }
 .footer{
     font-family: 'Poppins', sans-serif;
