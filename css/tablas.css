@@ -31,7 +31,7 @@ button{
     box-shadow: 2px 4px 15px 0 #000;
 }
 .text-navbar{ 
-    left: 50vh; 
+    display: inline-block;
 }
 .footer{
     font-family: 'Poppins', sans-serif;
