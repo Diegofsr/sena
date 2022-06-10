@@ -48,16 +48,6 @@ button{
     letter-spacing: 1px;
 }
 
-.footer_link{
-    color: #fff;
-    letter-spacing: 1px;
-}
-
-.footer_link:hover{
-    text-decoration: none;
-    color: #0303b5;
-}
-
 @media (min-width: 576px){
     .login{
         margin-right: 100px;
