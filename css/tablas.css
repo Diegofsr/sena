@@ -30,7 +30,7 @@ button{
     margin-left: 110vh;
 }
 .Bienvenidos{
-    margin: 175px;
+    display: inline-block;
 
     
 }
