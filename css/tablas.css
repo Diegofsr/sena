@@ -30,16 +30,14 @@ section{
     align-items: flex-start;
     margin-left:23vh;
 }
-/**h1{
+h1{
     margin: left 80px;
     margin-top: 1vh;
-    position:sticky;
 
-
-}**/
+}
 
 .text-navbar{
-    margin-left: 150px;
+    margin-left: 200px;
     margin: top 1vh; ;
 }
 
