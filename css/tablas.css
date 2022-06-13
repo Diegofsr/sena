@@ -31,7 +31,7 @@ section{
 h1{
     margin: left 50px;
     margin-top: 1vh;
-    position:absolute;
+    position:sticky;
 }
 
 .interrogaacion {
