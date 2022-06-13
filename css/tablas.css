@@ -1,9 +1,14 @@
+
+
+
+
+
 table{
     border: 1px solid;
     margin-left: 15vh;
     width: 50%;
     margin-bottom: 40px;
-    position: relative;
+    border-radius: 50%;
 
 }
 
