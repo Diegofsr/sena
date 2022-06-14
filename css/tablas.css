@@ -1,16 +1,22 @@
-body{
+/**body{
     height: 100vh;
    background-image: url(../assets/mechanic-presenting-something.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-}
+}**/
 
 table{
     border: 1px solid;
-    margin-left: 80vh;
-    width: 80%;
+    margin-top: 10vh;
+   
     margin-bottom: 40px;
+    margin-left: 30vh;
 
+}
+
+thead{
+    background:#079FF6;
+    color: black;
 }
 
 table th{
@@ -21,24 +27,23 @@ table td{
     border: 1px solid;
 }
 
-input{
+/**input{
     font: inherit;
 }
-section{
-    min-height: 10vh;
+/**section{
+    min-height: 15vh;
     display: flex;
     align-items: flex-start;
-    margin-left:23vh;
+    margin-left:69.5vh;
 }
 h1{
-    margin: left 250px;
-    margin-top: 1vh;
-
+    text-align: center;
 }
 
 .text-navbar{
-   margin: left 200px;
-    margin: top 1vh; ;
+   margin: left 100vh;
+    margin: top 2vh;
+   
 }
 
 .interrogaacion {
@@ -83,5 +88,5 @@ button{
     .login{
         margin-right: 100px;
         margin-top: 100px;
-    }
+    }**/
 }

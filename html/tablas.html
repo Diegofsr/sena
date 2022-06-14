@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -11,58 +11,39 @@
     <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/basic.css">
     <link rel="stylesheet" href="../css/tablas.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="//cdn.datatables.net/1.12.1/css/jquery.dataTables.min.css">
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready( function () {
+           $('#table_id').DataTable();
+    } );
+       </script>  
+      
     <title>El Pintor</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
+            <a class="navbar-brand" href="#">
                 <img class="logo-navbar" src="../assets/sigi.png" alt="logo sigi">
-                <h1 class="text-navbar">Bienvenido</h1>
-                <div class="icons-menu"></div>
-                <a href="#"><img class="interrogacion" src="../assets/signo-de-interrogacion.png"></a>
-                    <a class="text-btn" href="#">Cerrar sesion</a>
-                </div>
-        </nav>
-    </header>
-    <h1>INVENTARIO</h1>
-    <section>
-       <form autocomplete="off">
-        <img class="interrogacion" src="../assets/lupa.png">
-           <input type="text" name="q" placeholder="Buscar">
-             <button type="submit">Imprimir</button>
-             <img class="impresora" src="../assets/impresora.png">
-        </form>
-    </section>
-    <table>
+            </a>
+        </nav> 
+    <table id="table_id" class="display" >
+        <thead class="thead-dark">
         <tr>
-            <b><th>
-                Referencias
-            </th> </b>
-
-            <th>
-                Nombre
-            </th> 
-
-            <th>
-                Descripcion
-            </th>
-
-            <th>
-                Precio-compra
-            </th>
-
-            <th>
-                Precio-venta
-            </th>
-
-            <th>
-                prov_proveedor
-            </th>
-
-            <th>
-                Opcion
-            </th>
-        </tr>
+            <th scope="col">REFERENCIA</th>
+            <th scope="col">NOMBRE</th>
+            <th scope="col">DESCRIPCION</th>
+            <th scope="col">PRECIO-COMPRA</th>
+            <th scope="col">PRECIO-VENTA</th>
+            <th scope="col">PROV-PROVEEDOR</th>
+            <th scope="col">OPCION</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
 
         <tr>
             <td><b> 13846</b></td>

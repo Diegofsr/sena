@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>El Pintor</title>
+</head>
+<body>
+    <main class="d-flex">
+
+        <!-- barra de navegacion lateral -->
+        <div id="sidebar-container" class="bg-primary">
+            <div class="logo p-3 text-center">
+                <img src="../assets/logo-blanco.png" class="logo-blanco" alt="Logo el pintor">
+            </div>
+            <div class="menu">
+                <a href="#" class="menu_select d-block text-light p-3"><i class="icon ion-md-home mr-2 lead"></i> Inicio</a>
+                <a href="#" class="menu_select d-block text-light p-3"><i class="icon ion-md-contacts mr-2 lead"></i> Usuarios</a>
+                <a href="#" class="menu_select d-block text-light p-3"><i class="icon ion-md-cube mr-2 lead"></i> Inventario</a>
+                <a href="#" class="menu_select d-block text-light p-3"><i class="icon ion-md-add mr-2 lead"></i> Entradas</a>
+                <a href="#" class="menu_select d-block text-light p-3"><i class="icon ion-md-remove mr-2 lead"></i>
+                     Salidas</a>
+                <a href="#"class="menu_select d-block text-light p-3"><i class="icon ion-md-man mr-2 lead"></i>
+                     Clientes</a>
+                <a href="#"class="menu_select d-block text-light p-3"><i class="icon ion-md-clipboard mr-2 lead"></i>
+                     Proveedores</a>
+            </div>
+        </div>
+
+        <!-- navbar superior -->
+        <div class="w-100">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <h1 class="titulo1 mb-0 font-weight-bold">Sistema de Gestión de Inventarios</h1>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            <img src="../assets/user.png" class="img-fluid rounded-circle avatar mr-2" alt="Foto de perfil">
+                            Diego Santos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Mi Perfil</a>
+                            <a class="dropdown-item" href="#">Ayuda</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Cerrar sesión</a>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+            <hr class="m-0">
+
+            <!-- ingresar su codigo desde aqui Mary y Alexa -->
+            
+
+
+
+            <!-- su codigo va hasta aqui -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer d-flex align-items-center w-100 pl-2 font-weight-bold position-absolute">
+            <p class="m-0"> &copy;2022 SIGI. Designed, Developed and Built by SENA®</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
