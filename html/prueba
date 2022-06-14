@@ -64,7 +64,137 @@
             <hr class="m-0">
 
             <!-- ingresar su codigo desde aqui Mary y Alexa -->
-            
+            <table id="table_id" class="display" >
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">REFERENCIA</th>
+                    <th scope="col">NOMBRE</th>
+                    <th scope="col">DESCRIPCION</th>
+                    <th scope="col">PRECIO-COMPRA</th>
+                    <th scope="col">PRECIO-VENTA</th>
+                    <th scope="col">PROV-PROVEEDOR</th>
+                    <th scope="col">OPCION</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+        
+                <tr>
+                    <td><b> 13846</b></td>
+                    <td><b>Cemento</b></td> 
+                    <td><b>Cemento Argos Gris 50kg</b></td>
+                    <td><b>$21.769</b></td>
+                    <td><b>$28,300</b></td>
+                    <td><b>450</b></td>
+                    <td><a href="#"><img class="icono" src="../assets/boton-de-informacion.png"></a><a href="#"><img class="icono" src="../assets/editar.png"></a><a href="#"><img class="icono" src="../assets/eliminar.png"></a></td>
+                    
+                </tr>
+        
+                <tr>
+                    <td><b>13802</b></td>
+                    <td><b>Pegacor</b></td> 
+                    <td><b>Pegacor Bloque Vidrio Blanco 10Kg</b></td> 
+                    <td><b> $26.077</b></td> 
+                    <td><b> $33.900</b></td> 
+                    <td><b>700</b></td> 
+                    <td><a href="#"><img class="icono" src="../assets/boton-de-informacion.png"></a><a href="#"><img class="icono" src="../assets/editar.png"></a><a href="#"><img class="icono" src="../assets/eliminar.png"></a></td>
+                       
+                </tr>
+        
+                <tr>
+                    <td><b>73637</b></td>
+                    <td><b>Varilla</b></td> 
+                    <td><b>Corrugada Varilla Corrugada G60 W #4 (1/2 Pulg) X 6M</b></td> 
+                    <td><b> $23.138</b></td> 
+                    <td><b> $30.080</b></td> 
+                    <td><b>100</b></td> 
+                    <td><a href="#"><img class="icono" src="../assets/boton-de-informacion.png"></a><a href="#"><img class="icono" src="../assets/editar.png"></a><a href="#"><img class="icono" src="../assets/eliminar.png"></a></td>
+                     
+                </tr>
+        
+                <tr>
+                    <td><b>27159</b></td>
+                    <td><b>Alambre negro</b></td>
+                    <td><b>Alambre negro recocido 25k Calibre 17</b></td>
+                    <td><b> $13.9615</b></td>
+                    <td><b>$18.1500</b></td>
+                    <td><b>250</b></td>
+                    <td><a href="#"><img class="icono" src="../assets/boton-de-informacion.png"></a><a href="#"><img class="icono" src="../assets/editar.png"></a><a href="#"><img class="icono" src="../assets/eliminar.png"></a></td>
+                    
+                </tr>
+        
+                <tr>
+                    <td><b>11494</b></td>
+                    <td><b>Ladrillo</b></td>
+                    <td><b>Ladrillo Prensado Liviano 24,5X12X6cm 2.2K 56 u/m2</b></td>
+                    <td><b>$731</b></td>
+                    <td><b> $950</b></td>
+                    <td><b>500</b></td> 
+                    <td><a href="#"><img class="icono" src="../assets/boton-de-informacion.png"></a><a href="#"><img class="icono" src="../assets/editar.png"></a><a href="#"><img class="icono" src="../assets/eliminar.png"></a></td>
+                   
+                </tr>
+        
+                <tr>
+                    <td><b>13883</b></td> 
+                    <td><b>Friso Revoque Plástico</b></td> 
+                    <td><b>Friso Revoque Plástico Cuñete 30kg</b></td> 
+                    <td><b> $58.385</b></td> 
+                    <td><b>$75.900</b></td> 
+                    <td><b>600</b></td> 
+                    <td><a href="#"><img class="icono" src="../assets/boton-de-informacion.png"></a><a href="#"><img class="icono" src="../assets/editar.png"></a><a href="#"><img class="icono" src="../assets/eliminar.png"></a></td>
+                     
+                </tr>
+        
+                <tr>
+                   <td><b>65854</b></td>
+                   <td><b>Tubo Sanitario</b></td>
+                   <td><b>Tubo Sanitario 4" x 6 Mts</b></td>
+                   <td><b> $10.2231</b></td>
+                   <td><b>$13.2900</td>
+                   <td><b>400</b></td>
+                   <td><a href="#"><img class="icono" src="../assets/boton-de-informacion.png"></a><a href="#"><img class="icono" src="../assets/editar.png"></a><a href="#"><img class="icono" src="../assets/eliminar.png"></a></td>
+                   
+                </tr>
+        
+                <tr>
+                    <td><b>25810</b></td> 
+                    <td><b>Pintura Contratista para Interior</b></td> 
+                    <td><b>Pintura Contratista para Interior 2000 Alto Poder Cubriente Blanco 5 Galones</b></td> 
+                    <td><b> $12.3000</b></td> 
+                    <td><b> $15.9900</b></td> 
+                    <td><b>650</b></td> 
+                    <td><a href="#"><img class="icono" src="../assets/boton-de-informacion.png"></a><a href="#"><img class="icono" src="../assets/editar.png"></a><a href="#"><img class="icono" src="../assets/eliminar.png"></a></td>
+                     
+                </tr>
+        
+                <tr>
+                    <td><b>34229</b></td>
+                    <td><b>Piso Adel</b></td>
+                    <td><b>Piso Adel Beige 55.2x55.2cm Caja 1.52 m2</b></td>
+                    <td><b> $37.298</b></td>
+                    <td><b> $48.488</b></td>
+                    <td><b>200</b></td>
+                    <td><a href="#"><img class="icono" src="../assets/boton-de-informacion.png"></a><a href="#"><img class="icono" src="../assets/editar.png"></a><a href="#"><img class="icono" src="../assets/eliminar.png"></a></td>
+                    
+                </tr>
+        
+                <tr>
+                    <td><b>24405</b></td> 
+                    <td><b>Decorado Pared</b></td> 
+                    <td><b>Decorado Pared Dama Multicolor 15X45cm</b></td> 
+                    <td><b>$11.462</b></td> 
+                    <td><b>$14.900</b></td> 
+                    <td><b>220</b></td> 
+                    <td><a href="#"><img class="icono" src="../assets/boton-de-informacion.png"></a><a href="#"><img class="icono" src="../assets/editar.png"></a><a href="#"></a><img class="icono" src="../assets/eliminar.png"></a></td>
+                   
+                </tr>
+        
+            </table>
+            <footer>
+                <div class="footer">
+                    <p class="footer_copy m-0"> &copy;2022 <strong>SIGI</strong>. Designed, Developed and Built by <strong><a class="footer_link" href="#">SENA®</a></strong></p>
+                </div>
+            </footer>
 
 
 
