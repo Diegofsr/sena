@@ -1,0 +1,139 @@
+:root{
+    --primary: #111B54;
+    --light: #ffffff;
+    --gray: #efefef;
+}
+
+body{
+    font-family: 'Comfortaa', sans-serif;
+    overflow: hidden;
+}
+
+/* estilos para el sidebar */
+/* menu sidebar */
+.sidebar {
+    height: 100vh; 
+    width: 0;
+    position: relative;
+    /* z-index: 1;
+    top: 0;
+    left: 0; */
+    background-color: var(--primary);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+}
+  
+/* links sidebar */
+.sidebar a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    /* display: block; */
+    transition: 0.3s;
+}
+  
+.sidebar a:hover {
+    color: var(--light);
+}
+  
+/* boton para cerrar el sidebar */
+.sidebar .closebtn {
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.logo {
+    max-width: 200px;
+    /* margin-left: 20px; */
+}
+
+.logo-hidden {
+    display: none;
+}
+
+.menu_select:hover {
+    background-color: #15226b;
+}
+  
+/* boton para abrir el sidebar */
+.openbtn {
+    height: 66px;
+    width: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    font-size: 15px;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: var(--light);
+    border: none;
+    border-radius: 0 5px 5px 0;
+}
+  
+.openbtn:hover {
+    background-color: #444;
+}
+
+/* estilos navbar superior */
+.avatar{
+    max-width: 35px;
+}
+
+
+/* estilos para el contenido */
+.content{
+    overflow-y: auto;
+    /* height: 100vh; */
+    padding-bottom: 5rem;
+}
+
+.information{
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px #616D8B33;
+    transition: 0.5s;
+}
+
+.information:hover{
+    transform: scale(1.1);
+}
+
+.img-modulo{
+    max-width: 50px;
+}
+
+/* estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    body {
+        overflow-y: auto;
+    }
+
+    .sidebar {
+        max-width: 50px;
+        padding: 0;
+        height: auto;
+    }
+
+    .sidebar .closebtn {
+        position: initial;
+        display: block;     
+        text-align: center;   
+    }
+
+    .sidebar .logo{
+        display: none;
+    }
+
+    .sidebar .logo-hidden{
+        display: block;
+        width: 120px;
+    }
+
+    .openbtn {
+        height: 57px;
+    }
+}

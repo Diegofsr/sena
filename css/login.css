@@ -1,13 +1,89 @@
-body{
-    height: 100vh;
-    background-image: url("../assets/warehouse-worker-checking-inventory-his-tablet-while-walking-large-storage-department-with-shelves-packages-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+/* 
+fuente: 'Comfortaa', sans-serif */
+
+:root{
+    --primary: #111B54;
+    --light: #ffffff;
+    --gray: #efefef;
 }
 
+/* color de fondo de la barra superior */
+.navbar{
+    background-color: var(--primary);
+    margin: 0;
+}
+
+/* tamaño del logo de la barra superior */
+.navbar img{
+    width: 50px;
+}
+
+/* estilos para titulo secundario*/
+.titulo2{
+    font-size: 18px;
+    text-align: center;
+    font-weight: 800;
+}
+
+/* contenedor principal de inicio de sesion */
+.login {
+    max-width: 300px;
+    background-color: var(--light);
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0px 2px 6px #616D8B33;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+/* estilos para el logo de inicio de sesion */
+.login img{
+    display: block;
+    margin: 0 auto;
+    padding: 20px 0;
+    width: 100px;
+}
+
+/* links del login */
+.login_link{
+    padding: 10px 0;
+    font-size: 12px;
+    text-align: end;
+}
+
+/* estilos para el pie de pagina */
+.footer{
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: var(--light);
+    padding-left: 5px;
+}
+
+.footer p{
+    margin: 0;
+}
+
+.footer a{
+    color: var(--light);
+    letter-spacing: 1px;
+}
+
+.footer a:hover{
+    text-decoration: none;
+    color: #0303b5;
+}
+
+/* resposive para pantallas superiores a 576px */
 @media (min-width: 576px){
     .login{
         margin-right: 100px;
+        margin-top: 100px;
+    }
+
+    .recovery {
+        margin: auto;
         margin-top: 100px;
     }
 }
