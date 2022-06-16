@@ -1,6 +1,88 @@
+:root{
+    --primary: #111B54;
+    --light: #ffffff;
+    --gray: #efefef;
+}
+
 body{
-    background-image: url(../assets/warehouse-worker-checking-inventory-his-tablet-while-walking-large-storage-department-with-shelves-packages-background.jpg);
-    background-size: cover;
-    height: 100vh;
-    background-repeat: no-repeat;
+    overflow: hidden;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
+    color: var(--primary);
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+
+.btn-search{
+    right: 5px;
+}
+
+.btn-collapse{
+    border: none;
+    background-color: transparent;
+    display: block;
+}
+
+.bg-light{
+    background-color: var(--light) !important;
+}
+
+.avatar{
+    max-width: 35px;
+}
+
+.menu_select:hover{
+    background-color: #15226b;
+}
+
+.logo-blanco{
+    max-width: 200px;
+}
+
+.titulo1{
+    font-size: 18px;
+}
+
+.information{
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px #616D8B33;
+    transition: 0.5s;
+}
+
+.information:hover{
+    transform: scale(1.1);
+}
+
+.container_table{
+    background-color: #0575E6;
+}
+
+.img-modulo{
+    max-width: 50px;
+}
+
+.footer{
+    height: 25px;
+    font-size: 12px;
+    color: #000;
+    bottom: 0;
+    background-color: var(--gray);
+}
+
+#sidebar-container{
+    min-height: 100vh;
+}
+
+#sidebar-container .logo{
+    padding: .875rem 1.25rem;
+}
+
+#sidebar-container .menu{
+    width: 18rem;
 }

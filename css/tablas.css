@@ -1,92 +1,39 @@
-/**body{
-    height: 100vh;
-   background-image: url(../assets/mechanic-presenting-something.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}**/
 
 table{
     border: 1px solid;
-    margin-top: 10vh;
-   
-    margin-bottom: 40px;
-    margin-left: 30vh;
+    margin-top: 5vh;
+    margin-bottom: 30px;
+    margin-left: 10vh;
+    margin-right: 20vh;
 
 }
 
 thead{
-    background:#079FF6;
+    background:#0782f6;
     color: black;
+    padding-left: 6px;
 }
 
 table th{
     border: 1px solid;
+    margin-left: 10px;
+    padding-left: 10px;
 }
 
 table td{
     border: 1px solid;
+    padding-left: 25px;
 }
 
-/**input{
-    font: inherit;
-}
-/**section{
-    min-height: 15vh;
-    display: flex;
-    align-items: flex-start;
-    margin-left:69.5vh;
-}
 h1{
-    text-align: center;
+    margin-left: 15vh;
+    margin-top: 1vh;
+}
+.botones{
+    margin-left: 15vh;
 }
 
-.text-navbar{
-   margin: left 100vh;
-    margin: top 2vh;
-   
+.btn-1{
+    margin-left: 100vh;
 }
 
-.interrogaacion {
-    color: #fff;
-}
-
-button{
-    margin-left: 120vh;
-}
-.text-navbar{ 
-    width:72%;
-    color: #fff;
-}
-
-.text-btn{
-    color: #fff;
-}
-.footer{
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    color: #000000;
-    padding-left: 5px;
-}
-.footer_copy{
-    letter-spacing: 1px;
-}
-
-.footer_link{
-    color: #000000;
-    letter-spacing: 1px;
-}
-
-.footer_link:hover{
-    text-decoration: none;
-    color: #0303b5;
-}
-
-@media (min-width: 576px){
-    .login{
-        margin-right: 100px;
-        margin-top: 100px;
-    }**/
-}
