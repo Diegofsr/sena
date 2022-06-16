@@ -1,15 +1,7 @@
-table{
-    border: 1px solid;
-    margin-top: 5vh;
-    margin-bottom: 30px;
-    margin-left: 10vh;
-    margin-right: 20vh;
-
-}
 
 thead{
-    background:#EDBB99;
-    color: black;
+    background:#F9E79F;
+    color: white;
     padding-left: 6px;
 }
 
@@ -46,8 +38,4 @@ h1{
 }
 .botones{
     margin-left: 15vh;
-}
-
-.btn-2{
-    margin-left: 80vh;
 }
