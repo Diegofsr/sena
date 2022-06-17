@@ -1,35 +1,28 @@
-
-thead{
-    background:#F9E79F;
-    color: white;
-    padding-left: 6px;
-}
-
 table{
     border: 1px solid;
-    margin-top: 3vh;
+    margin-top: 5vh;
     margin-bottom: 50px;
-    margin-left: 10vh;
-    margin-right: 20vh;
-    width: 80%;
-
+    margin-left: 15vh;
+    margin-right: 25vh;
+    
 }
 
 thead{
-    background:#D1F2EB;
+    background:#E59866;
     color: black;
-    padding-left: 10px;
+    padding-left: 6px;
 }
 
 table th{
     border: 1px solid;
     margin-left: 10px;
-    padding-left: 10px;
+    padding: 5px;
 }
 
 table td{
     border: 1px solid;
-    padding: 25px;
+    padding-left: 25px;
+    padding-right: 20px;
 }
 
 h1{
@@ -39,3 +32,9 @@ h1{
 .botones{
     margin-left: 15vh;
 }
+
+.btn-2{
+    margin-left: 85vh;
+}
+
+
