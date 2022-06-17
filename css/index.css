@@ -47,7 +47,6 @@ body{
 
 .logo {
     max-width: 200px;
-    /* margin-left: 20px; */
 }
 
 .logo-hidden {
@@ -103,6 +102,42 @@ body{
 
 .img-modulo{
     max-width: 50px;
+}
+
+.titulo {
+    font-size: 25px;
+    color: var(--primary);
+    border-bottom: 1px #111b5415 solid;
+}
+
+/* estilos de tabla */
+.table {
+    font-size: 14px;
+}
+
+/* estilos para el footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 12px;
+    background-color: var(--gray);
+}
+
+.footer p {
+    margin: 0;
+    padding: 5px 0;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--primary);
 }
 
 /* estilos para pantallas pequeñas */
