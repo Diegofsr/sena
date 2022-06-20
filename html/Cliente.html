@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/Cliente.css">
+    <title>El Pintor</title>
+</head>
+<body>
+    <main class="d-flex">
+
+        <!-- barra de navegacion lateral -->
+        <div id="sidebar-container" class="bg-primary">
+            <div class="logo p-3 text-center">
+                <img src="../assets/logo-blanco.png" class="logo-blanco" alt="Logo el pintor">
+            </div>
+            <div class="menu">
+                <a href="#" class="menu_select d-block text-light p-3"><i class="icon ion-md-home mr-2 lead"></i> Inicio</a>
+                <a href="#" class="menu_select d-block text-light p-3"><i class="icon ion-md-contacts mr-2 lead"></i> Usuarios</a>
+                <a href="#" class="menu_select d-block text-light p-3"><i class="icon ion-md-cube mr-2 lead"></i> Inventario</a>
+                <a href="#" class="menu_select d-block text-light p-3"><i class="icon ion-md-add mr-2 lead"></i> Entradas</a>
+                <a href="#" class="menu_select d-block text-light p-3"><i class="icon ion-md-remove mr-2 lead"></i>
+                     Salidas</a>
+                <a href="#"class="menu_select d-block text-light p-3"><i class="icon ion-md-man mr-2 lead"></i>
+                     Clientes</a>
+                <a href="#"class="menu_select d-block text-light p-3"><i class="icon ion-md-clipboard mr-2 lead"></i>
+                     Proveedores</a>
+            </div>
+        </div>
+
+        <!-- navbar superior -->
+        <div class="w-100">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <h1 class="titulo1 mb-0 font-weight-bold">Sistema de Gestión de Inventarios</h1>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                            <img src="../assets/user.png" class="img-fluid rounded-circle avatar mr-2" alt="Foto de perfil">
+                            Diego Santos
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Mi Perfil</a>
+                            <a class="dropdown-item" href="#">Ayuda</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Cerrar sesión</a>
+                        </div>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+            </nav>
+            <hr class="m-0">
+
+            <!-- ingresar su codigo desde aqui Mary y Alexa -->
+            <h1 >CLIENTES</h1>
+            <div class="botones">
+                <i class="icon ion-md-search"></i>
+                <input type="text" placeholder="buscar">
+                <button class="btn-1">Crear Cliente <i class="icon ion-md-contacts"></i></button>  
+                <button class="btn-2">Crear Informe <i class="icon ion-md-paper"></i></button> 
+            </div>
+
+            <table id="table_id" class="display" >
+                <thead class="thead-dark">
+                
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">ID_Cliente</th>
+                    <th scope="col">Nombre_Cliente</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Ciudad</th>
+                    <th scope="col">Direccion</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Opcion</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>1004534276</td>
+                    <td>Orlando</td>
+                    <td>Salgado</td>
+                    <td>Salgado23@hotmail.com</td>
+                    <td>santander</td>
+                    <td>Cra. 10 No.86-00</td>
+                    <td>3112678945</td>
+                   <td><a href="#"><i class="icon ion-md-create"></i></a>  <a href="#"><i class="icon ion-md-trash"></i></a></td>
+                  </tr>
+
+
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>2342375689</td>
+                    <td>Alison</td>
+                    <td>Perez</td>
+                    <td>Alaisofi34@gmail.com</td>
+                    <td>Cartagena</td>
+                    <td>Cra. 08 No.22-78</td>
+                    <td>3209876534</td>
+                    <td><a href="#"><i class="icon ion-md-create"></i></a>  <a href="#"><i class="icon ion-md-trash"></i></a></td>
+                  </tr>
+
+
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>1004538923</td>
+                    <td>Itzayana</td>
+                    <td>Marin</td>
+                    <td>ItzayanaR45@outlook.com</td>
+                    <td>Barranquilla</td>
+                    <td>Cll. 13 No.20-23</td>
+                    <td>3132308956</td>
+                    <td><a href="#"><i class="icon ion-md-create"></i></a>  <a href="#"><i class="icon ion-md-trash"></i></a></td>
+                </tr>
+
+
+
+              <tr>
+                    <th scope="row">4</th>
+                    <td>2357812956</td>
+                    <td>Kelly</td>
+                    <td>Garcia</td>
+                    <td>Kelly39@gmail.com</td>
+                    <td>Barranquilla</td>
+                    <td>Cll. 53 No.64-23</td>
+                    <td>3132309075</td>
+                    <td><a href="#"><i class="icon ion-md-create"></i></a>  <a href="#"><i class="icon ion-md-trash"></i></a></td>
+                </tr>
+
+
+                 <tr>
+                    <th scope="row">5</th>
+                    <td>1004562398</td>
+                    <td>Monica</td>
+                    <td>Lopez</td>
+                    <td>Monicaferna23@outlook.com</td>
+                    <td>Cartagena</td>
+                    <td>Cll. 45 No.34-87</td>
+                    <td>3112309075</td>
+                    <td><a href="#"><i class="icon ion-md-create"></i></a>  <a href="#"><i class="icon ion-md-trash"></i></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">6</th>
+                    <td>235689145</td>
+                    <td>David</td>
+                    <td>Morales</td>
+                    <td>david28@gmail.com</td>
+                    <td>Bogota</td>
+                    <td>Cra. 21 No.99-87</td>
+                    <td>3142306675</td>
+                    <td><a href="#"><i class="icon ion-md-create"></i></a>  <a href="#"><i class="icon ion-md-trash"></i></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>1274927456</td>
+                    <td>Maria</td>
+                    <td>Torres</td>
+                    <td>Marialu56@gmail.com</td>
+                    <td>Medellin</td>
+                    <td>Cra. 93 No.45-86</td>
+                    <td>3145467893</td>
+                    <td><a href="#"><i class="icon ion-md-create"></i></a>  <a href="#"><i class="icon ion-md-trash"></i></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">8</th>
+                    <td>1032376894</td>
+                    <td>Daniel</td>
+                    <td>Peña</td>
+                    <td>Daniel56@outlook.com</td>
+                    <td>Medellin</td>
+                    <td>Cll. 127 No.10-86</td>
+                    <td>3145465293</td>
+                    <td><a href="#"><i class="icon ion-md-create"></i></a>  <a href="#"><i class="icon ion-md-trash"></i></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">9</th>
+                    <td>2317483905</td>
+                    <td>Sofia</td>
+                    <td>Muñoz</td>
+                    <td>sofia45@hotmail.com</td>
+                    <td>Sincelejo</td>
+                    <td>Cll. 136 No.05-32</td>
+                    <td>3195465293</td>
+                    <td><a href="#"><i class="icon ion-md-create"></i></a>  <a href="#"><i class="icon ion-md-trash"></i></a></td>
+                </tr>
+                <tr>
+                    <th scope="row">10</th>
+                    <td>2745830264</td>
+                    <td>Alex</td>
+                    <td>Pineda</td>
+                    <td>Alex89@gmail.com</td>
+                    <td>Turbaco</td>
+                    <td>Cll. 30 No.18-19</td>
+                    <td>32054654455</td>
+                    <td><a href="#"><i class="icon ion-md-create"></i></a>  <a href="#"><i class="icon ion-md-trash"></i></a></td>
+                </tr>
+             
+             
+                </tbody>
+              </table>
+            <!-- su codigo va hasta aqui -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer d-flex align-items-center w-100 pl-2 font-weight-bold position-absolute">
+            <p class="m-0"> &copy;2022 SIGI. Designed, Developed and Built by SENA®</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+</body>
+</html>
