@@ -2,22 +2,22 @@
 
 
 table{
-    border: 1px solid;
+    border: 1px solid; /**Este codigo sirve para darle estilo a los bordes de la tabla y para poscisionarla **/
     margin-top: 5vh;
     margin-bottom: 20px;
     margin-left: 10vh;
-    margin-right: 10vh;
+    margin-right: 10vh  
     
 }
 
 thead{
-    background:#27AE60;
+    background:#27AE60;/** Este conjunto de codigo sirve para darle al escabezado de la tabla estilo , el color de la letra y del encabezado **/
     color: black;
-    padding-left: 6px;
+    padding-left: 6px;/** Este codigo sirve para darle un espacio entre el borde y la letra */
 }
 
 table th{
-    border: 1px solid;
+    border: 1px solid;/**Sirve para poder posicionar la letra y darle un espacio entre las letras y el borde de la tabla */
     margin-left: 10px;
     padding: 5px;
 }
@@ -29,11 +29,11 @@ table td{
 }
 
 h1{
-    margin-left: 15vh;
+    margin-left: 15vh;/** Este codigo sirve para poder posicionar el encabezado que dice CLIENTES*/
     margin-top: 1vh;
 }
 .botones{
-    margin-left: 15vh;
+    margin-left: 15vh;/** Este codigo es para darle estilo a los botones y poder posicionarlos */
 }
 
 .btn-1{
