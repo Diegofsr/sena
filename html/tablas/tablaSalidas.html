@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
+    <link rel="shortcut icon" href="../../assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/index.css">
+    <title>EL PINTOR PS DISTRIBUCIONES S.A.</title>
+</head>
+<body>
+
+    <!-- sidebar menu lateral -->
+    <main class="d-flex">
+
+        <div id="sidebar-container" class="sidebar">
+            <img class="logo" src="../../assets/logo-blanco.png" alt="Logo el pintor">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="../index.html" class="menu_select d-lg-block d-none p-3"><i class="fas fa-home mr-2"></i> Inicio</a>
+            <a href="../tablas/tablaUsuarios.html" class="menu_select d-lg-block d-none p-3"><i class="fas fa-user mr-2"></i> Usuarios</a>
+            <a href="../tablas/tablaInventario.html" class="menu_select d-lg-block d-none p-3"><i class="fas fa-boxes mr-2"></i> Inventario</a>
+            <a href="../tablas/tablaEntradas.html" class="menu_select d-lg-block d-none p-3"><i class="fas fa-plus-circle mr-2"></i> Entradas</a>
+            <a href="../tablas/tablaSalidas.html" class="menu_select d-lg-block d-none p-3"><i class="fas fa-minus-circle mr-2"></i> Salidas</a>
+            <a href="../tablas/tablaClientes.html"class="menu_select d-lg-block d-none p-3"><i class="fas fa-users mr-2"></i> Clientes</a>
+            <a href="../tablas/tablaProveedores.html"class="menu_select d-lg-block d-none p-3"><i class="fas fa-industry mr-2"></i> Proveedores</a>
+    
+            <!-- iconos para pantalla pequeña -->
+            <a href="../index.html" class="menu_hidden d-md-none d-block p-3"><i class="fas fa-home"></i></a>
+            <a href="../tablas/tablaUsuarios.html" class="menu_hidden d-md-none d-block p-3"><i class="fas fa-user"></i></a>
+            <a href="../tablas/tablaInventario.html" class="menu_hidden d-md-none d-block p-3"><i class="fas fa-boxes"></i></a>
+            <a href="../tablas/tablaEntradas.html" class="menu_hidden d-md-none d-block p-3"><i class="fas fa-plus-circle"></i></a>
+            <a href="../tablas/tablaSalidas.html" class="menu_hidden d-md-none d-block p-3"><i class="fas fa-minus-circle"></i></a>
+            <a href="../tablas/tablaClientes.html"class="menu_hidden d-md-none d-block p-3"><i class="fas fa-users"></i></i></a>
+            <a href="../tablas/tablaProveedores.html"class="menu_hidden d-md-none d-block p-3"><i class="fas fa-industry mr-2"></i></a>
+        </div>
+          
+        <!-- boton para abrir el sidebar -->
+        <div id="main">
+            <button class="openbtn p-0" onclick="openNav()"><i class="fas fa-angle-right"></i></button>
+        </div>
+    
+        <!-- navbar superior -->
+        <div class="w-100">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand pl-2 font-weight-bold d-lg-block d-none text-secondary" href="#">Sistema de Gestión de Inventarios</a>
+                <a class="navbar-brand pl-2 font-weight-bold d-lg-none text-secondary" href="#">SIGI</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <img src="../../assets/user.png" class="img-fluid rounded-circle avatar mr-2" alt="Foto de perfil">
+                        Diego Santos
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Mi Perfil</a>
+                        <a class="dropdown-item" href="#">Ayuda</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../login.html">Cerrar Sesión</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            <hr class="m-0">
+            
+            <!-- contenido -->
+            <div class="content">
+                <section>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                              <h2 class="titulo mt-2">Salidas</h2>
+                            </div>
+                        </div>
+
+                        <!-- tabla de datos -->
+                        <div class="row">
+                          <div class="col">
+                            <table id="example" class="table table-sm table-striped table-bordered table-hover" style="width:100%">
+                              <thead class="thead-dark">
+                                  <tr>
+                                      <th>N°</th>
+                                      <th>Ref</th>
+                                      <th>Producto</th>
+                                      <th>Descripción</th>
+                                      <th>P_Compra</th>
+                                      <th>P_Venta</th>
+                                      <th>Cantidad</th>
+                                      <th>Opciónes</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                    <td scope="row">1</td>
+                                    <td>13846</td>
+                                    <td>Cemento</td>
+                                    <td>Cemento Argos Gris 50kg</td>
+                                    <td>$21.769</td>
+                                    <td>$28.300</td>
+                                    <td class="text-center">50</td>
+                                    <td class="text-center">
+                                        
+                                        <!-- boton descargar de inventario -->
+                                        <button class="border-0 bg-transparent mx-1" title="Cargar salida">
+                                            <a href="../formularios/formSalidas.html"><i class="fas fa-shopping-cart"></i></a>
+                                        </button>
+
+                                        <!-- boton eliminar -->
+                                        <button class="button border-0 bg-transparent mx-1" title="Eliminar Registro" data-toggle="modal" data-target="#modalEliminar">
+                                            <a href="#"><i class="fas fa-trash-alt"></i></a>
+                                        </button>
+
+                                        <!-- Modal Eliminar-->
+                                        <div class="modal fade" id="modalEliminar" tabindex="-1" aria-labelledby="modalEliminarLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="modalEliminarLabel">ELIMINAR REGISTRO</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Esta seguro de eliminar este registro
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                        <button type="button" class="btn btn-primary">Aceptar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">2</td>
+                                    <td>13802</td>
+                                    <td>Pegacor</td>
+                                    <td>Pegacor Bloque Vidrio Blanco 10Kg</td>
+                                    <td>$26.077</td>
+                                    <td>$33.900</td>
+                                    <td class="text-center">20</td>
+                                    <td class="text-center">
+
+                                        <!-- boton descargar de inventario -->
+                                        <button class="border-0 bg-transparent mx-1" title="Cargar salida">
+                                            <a href="../formularios/formSalidas.html"><i class="fas fa-shopping-cart"></i></a>
+                                        </button>
+
+                                        <!-- boton eliminar -->
+                                        <button class="button border-0 bg-transparent mx-1" title="Eliminar Registro" data-toggle="modal" data-target="#modalEliminar">
+                                            <a href="#"><i class="fas fa-trash-alt"></i></a>
+                                        </button>
+
+                                        <!-- Modal Eliminar-->
+                                        <div class="modal fade" id="modalEliminar" tabindex="-1" aria-labelledby="modalEliminarLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="modalEliminarLabel">ELIMINAR REGISTRO</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Esta seguro de eliminar este registro
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                        <button type="button" class="btn btn-primary">Aceptar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">3</td>
+                                    <td>73637</td>
+                                    <td>Varilla</td>
+                                    <td>Corrugada Varilla Corrugada G60 W #4 (1/2 Pulg) X 6M</td>
+                                    <td>$23.138</td>
+                                    <td>$30.080</td>
+                                    <td class="text-center">100</td>
+                                    <td class="text-center">
+
+                                        <!-- boton descargar de inventario -->
+                                        <button class="border-0 bg-transparent mx-1" title="Cargar salida">
+                                            <a href="../formularios/formSalidas.html"><i class="fas fa-shopping-cart"></i></a>
+                                        </button>
+
+                                        <!-- boton eliminar -->
+                                        <button class="button border-0 bg-transparent mx-1" title="Eliminar Registro" data-toggle="modal" data-target="#modalEliminar">
+                                            <a href="#"><i class="fas fa-trash-alt"></i></a>
+                                        </button>
+
+                                        <!-- Modal Eliminar-->
+                                        <div class="modal fade" id="modalEliminar" tabindex="-1" aria-labelledby="modalEliminarLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="modalEliminarLabel">ELIMINAR REGISTRO</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Esta seguro de eliminar este registro
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                        <button type="button" class="btn btn-primary">Aceptar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">4</td>
+                                    <td>27159</td>
+                                    <td>Alambre negro</td>
+                                    <td>Alambre negro recocido 25k Calibre 17</td>
+                                    <td>$139.615</td>
+                                    <td>$181.500</td>
+                                    <td class="text-center">35</td>
+                                    <td class="text-center">
+
+                                        <!-- boton descargar de inventario -->
+                                        <button class="border-0 bg-transparent mx-1" title="Cargar salida">
+                                            <a href="../formularios/formSalidas.html"><i class="fas fa-shopping-cart"></i></a>
+                                        </button>
+
+                                        <!-- boton eliminar -->
+                                        <button class="button border-0 bg-transparent mx-1" title="Eliminar Registro" data-toggle="modal" data-target="#modalEliminar">
+                                            <a href="#"><i class="fas fa-trash-alt"></i></a>
+                                        </button>
+
+                                        <!-- Modal Eliminar-->
+                                        <div class="modal fade" id="modalEliminar" tabindex="-1" aria-labelledby="modalEliminarLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="modalEliminarLabel">ELIMINAR REGISTRO</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Esta seguro de eliminar este registro
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                        <button type="button" class="btn btn-primary">Aceptar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">5</td>
+                                    <td>11494</td>
+                                    <td>Ladrillo</td>
+                                    <td>Ladrillo Prensado Liviano 24,5X12X6cm 2.2K 56 u/m2</td>
+                                    <td>$731</td>
+                                    <td>$950</td>
+                                    <td class="text-center">1.500</td>
+                                    <td class="text-center">
+
+                                        <!-- boton descargar de inventario -->
+                                        <button class="border-0 bg-transparent mx-1" title="Cargar salida">
+                                            <a href="../formularios/formSalidas.html"><i class="fas fa-shopping-cart"></i></a>
+                                        </button>
+
+                                        <!-- boton eliminar -->
+                                        <button class="button border-0 bg-transparent mx-1" title="Eliminar Registro" data-toggle="modal" data-target="#modalEliminar">
+                                            <a href="#"><i class="fas fa-trash-alt"></i></a>
+                                        </button>
+
+                                        <!-- Modal Eliminar-->
+                                        <div class="modal fade" id="modalEliminar" tabindex="-1" aria-labelledby="modalEliminarLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="modalEliminarLabel">ELIMINAR REGISTRO</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Esta seguro de eliminar este registro
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                        <button type="button" class="btn btn-primary">Aceptar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td scope="row">6</td>
+                                    <td>13883</td>
+                                    <td>Friso Revoque Plástico</td>
+                                    <td>Friso Revoque Plástico Cuñete 30kg</td>
+                                    <td>$58.385</td>
+                                    <td>$75.900</td>
+                                    <td class="text-center">20</td>
+                                    <td class="text-center">
+
+                                        <!-- boton descargar de inventario -->
+                                        <button class="border-0 bg-transparent mx-1" title="Cargar salida">
+                                            <a href="../formularios/formSalidas.html"><i class="fas fa-shopping-cart"></i></a>
+                                        </button>
+
+                                        <!-- boton eliminar -->
+                                        <button class="button border-0 bg-transparent mx-1" title="Eliminar Registro" data-toggle="modal" data-target="#modalEliminar">
+                                            <a href="#"><i class="fas fa-trash-alt"></i></a>
+                                        </button>
+
+                                        <!-- Modal Eliminar-->
+                                        <div class="modal fade" id="modalEliminar" tabindex="-1" aria-labelledby="modalEliminarLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="modalEliminarLabel">ELIMINAR REGISTRO</h5>
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">&times;</span>
+                                                        </button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Esta seguro de eliminar este registro
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                                        <button type="button" class="btn btn-primary">Aceptar</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- pie de pagina de la interfaz -->
+        <footer>
+          <div class="footer d-lg-block d-none">
+              <p> &copy;2022 <strong>SIGI</strong>. Designed, Developed and Built by <strong><a href="http://oferta.senasofiaplus.edu.co/sofia-oferta/" target="_blank">SENA®</a></strong></p>
+          </div>
+        </footer>
+    </main>
+
+
+    <script src="../../javascript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9e84f8af54.js" crossorigin="anonymous"></script>
+
+    <!-- para usar botones en datatables -->
+    <script src="../../datatables/Buttons-2.2.3/js/dataTables.buttons.min.js"></script>
+    <script src="../../datatables/JSZip-2.5.0/jszip.min.js"></script>
+    <script src="../../datatables/pdfmake-0.1.36/pdfmake.js"></script>
+    <script src="../../datatables/pdfmake-0.1.36/vfs_fonts.js"></script>
+    <script src="../../datatables/Buttons-2.2.3/js/buttons.html5.min.js"></script>
+    <script src="../../datatables/Buttons-2.2.3/js/buttons.print.min.js"></script>
+
+    <!-- script para personalizar tabla -->
+    <script>
+      $(document).ready(function () {
+        $('#example').DataTable({
+            language: {
+            url: 'https://cdn.datatables.net/plug-ins/1.12.1/i18n/es-ES.json'
+          },
+            pageLength : 8,
+            lengthMenu: [[5, 8], [5, 8]],
+            responsive: 'true',
+            dom: 'Bfrtilp',
+            buttons: [
+                {
+                    extend:     'excelHtml5',
+                    text:       '<i class="fa fa-file-excel"></i>',
+                    titleAttr:  'Exportar a Excel',
+                    className:  'btn btn-success',
+                    exportOptions: {
+                        columns: [0,1,2,3,4,5,6]
+                    }
+                },
+                {
+                    extend:     'pdfHtml5',
+                    text:       '<i class="fas fa-file-pdf"></i>',
+                    titleAttr:  'Exportar a PDF',
+                    className:  'btn btn-danger',
+                    exportOptions: {
+                        columns: [0,1,2,3,4,5,6]
+                    }
+                },
+                {
+                    extend:     'print',
+                    text:       '<i class="fa fa-print"></i></i>',
+                    titleAttr:  'Imprimir',
+                    className:  'btn btn-info',
+                    exportOptions: {
+                        columns: [0,1,2,3,4,5,6]
+                    }
+                },
+            ]
+        });
+      });
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/index.css">
+    <title>EL PINTOR PS DISTRIBUCIONES S.A.</title>
+</head>
+<body>
+
+    <!-- sidebar menu lateral -->
+    <main class="d-flex">
+
+      <div id="sidebar-container" class="sidebar">
+        <img class="logo" src="../../assets/logo-blanco.png" alt="Logo el pintor">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="../index.html" class="menu_select d-lg-block d-none p-3"><i class="fas fa-home mr-2"></i> Inicio</a>
+        <a href="../tablas/tablaUsuarios.html" class="menu_select d-lg-block d-none p-3"><i class="fas fa-user mr-2"></i> Usuarios</a>
+        <a href="../tablas/tablaInventario.html" class="menu_select d-lg-block d-none p-3"><i class="fas fa-boxes mr-2"></i> Inventario</a>
+        <a href="../tablas/tablaEntradas.html" class="menu_select d-lg-block d-none p-3"><i class="fas fa-plus-circle mr-2"></i> Entradas</a>
+        <a href="../tablas/tablaSalidas.html" class="menu_select d-lg-block d-none p-3"><i class="fas fa-minus-circle mr-2"></i> Salidas</a>
+        <a href="../tablas/tablaClientes.html"class="menu_select d-lg-block d-none p-3"><i class="fas fa-users mr-2"></i> Clientes</a>
+        <a href="../tablas/tablaProveedores.html"class="menu_select d-lg-block d-none p-3"><i class="fas fa-industry mr-2"></i> Proveedores</a>
+
+        <!-- iconos para pantalla pequeña -->
+        <a href="../index.html" class="menu_hidden d-md-none d-block p-3"><i class="fas fa-home"></i></a>
+        <a href="../tablas/tablaUsuarios.html" class="menu_hidden d-md-none d-block p-3"><i class="fas fa-user"></i></a>
+        <a href="../tablas/tablaInventario.html" class="menu_hidden d-md-none d-block p-3"><i class="fas fa-boxes"></i></a>
+        <a href="../tablas/tablaEntradas.html" class="menu_hidden d-md-none d-block p-3"><i class="fas fa-plus-circle"></i></a>
+        <a href="../tablas/tablaSalidas.html" class="menu_hidden d-md-none d-block p-3"><i class="fas fa-minus-circle"></i></a>
+        <a href="../tablas/tablaClientes.html"class="menu_hidden d-md-none d-block p-3"><i class="fas fa-users"></i></i></a>
+        <a href="../tablas/tablaProveedores.html"class="menu_hidden d-md-none d-block p-3"><i class="fas fa-industry mr-2"></i></a>
+    </div>
+          
+        <!-- boton para abrir el sidebar -->
+        <div id="main">
+            <button class="openbtn p-0" onclick="openNav()"><i class="fas fa-angle-right"></i></button>
+        </div>
+    
+        <!-- navbar superior -->
+        <div class="w-100">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand pl-2 font-weight-bold d-lg-block d-none text-secondary" href="#">Sistema de Gestión de Inventarios</a>
+                <a class="navbar-brand pl-2 font-weight-bold d-lg-none text-secondary" href="#">SIGI</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                        <img src="../../assets/user.png" class="img-fluid rounded-circle avatar mr-2" alt="Foto de perfil">
+                        Diego Santos
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Mi Perfil</a>
+                        <a class="dropdown-item" href="#">Ayuda</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../login.html">Cerrar Sesión</a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            <hr class="m-0">
+            
+            <!-- contenido formulario -->
+            <div class="content">
+                <section>
+                    <div class="container">
+                        <div class="row my-2">
+                            <div class="col-lg-12">
+                              <h2 class="titulo mt-4">Productos</h2>
+                              <hr>
+                            </div>
+                        </div>
+                        <form action="" class="col-lg-10 offset-lg-1">
+                          <div class="form-row">
+                              <div class="form-group col-md-6">
+                                  <label>Referencia</label>
+                                  <input type="text" class="form-control form-control-sm" name="idProducto" placeholder="Ingrese la referencia del producto">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <label>Nombre</label>
+                                  <input type="text" class="form-control form-control-sm" name="nombreProducto" placeholder="Ingrese el nombre del producto">
+                                </div>
+                            </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-12">
+                              <label>Descripción</label>
+                              <input type="text" class="form-control form-control-sm" name="descProducto" placeholder="Ingrese una descripción">
+                            </div>
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-2">
+                              <label>cantidad</label>
+                              <input type="text" class="form-control form-control-sm" name="cantidadProducto" >
+                            </div>
+                            <div class="form-group col-md-5">
+                              <label>Precio de compra</label>
+                              <input type="text" class="form-control form-control-sm" name="pCompraProducto" placeholder="Ingrese el valor de compra">
+                            </div>
+                            <div class="form-group col-md-5">
+                              <label>Precio de venta</label>
+                              <input type="text" class="form-control form-control-sm" name="pVentaProducto" placeholder="Ingrese el valor de venta">
+                            </div>
+                          </div>
+                          
+                          <div style="text-align: center;">
+
+                            <!-- boton acción producto -->
+                            <button type="button" class="btn btn-sm btn-primary m-2" data-toggle="modal" data-target="#crearUsuario">
+                              <i class="fas fa-plus-circle"></i> Crear
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="crearUsuario" tabindex="-1" aria-labelledby="crearUsuarioLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="crearUsuarioLabel">Crear Producto</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    ¿Desea crear este producto en la base de datos?
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-primary">Guardar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- boton editar usuario -->
+                            <button type="button" class="btn btn-secondary btn-sm m-2" data-toggle="modal" data-target="#editarUsuario">
+                              <i class="fas fa-edit"></i> Editar
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="editarUsuario" tabindex="-1" aria-labelledby="editarUsuarioLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="editarUsuarioLabel">Editar Producto</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    ¿Desea guardar los cambios realizados en el producto?
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-primary">Guardar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- boton editar usuario -->
+                            <button type="button" class="btn btn-danger btn-sm m-2" data-toggle="modal" data-target="#eliminarUsuario">
+                              <i class="fas fa-times-circle"></i> Eliminar
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="eliminarUsuario" tabindex="-1" aria-labelledby="eliminarUsuarioLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h5 class="modal-title" id="eliminarUsuarioLabel">Eliminar Producto</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <i class="fas fa-exclamation-circle"></i> El producto será eliminado de la base de datos
+                                  </div>
+                                  <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-primary">Aceptar</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+
+        <!-- pie de pagina de la interfaz -->
+        <footer>
+          <div class="footer d-lg-block d-none">
+              <p> &copy;2022 <strong>SIGI</strong>. Designed, Developed and Built by <strong><a href="http://oferta.senasofiaplus.edu.co/sofia-oferta/" target="_blank">SENA®</a></strong></p>
+          </div>
+        </footer>
+    </main>
+
+
+    <script src="../../javascript/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9e84f8af54.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>

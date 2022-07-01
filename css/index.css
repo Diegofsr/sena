@@ -4,16 +4,27 @@
     --gray: #efefef;
 }
 
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
     font-family: 'Comfortaa', sans-serif;
     overflow: hidden;
+}
+
+/* estilos para el boton despliegue del sidebar */
+#main {
+    display: none;
 }
 
 /* estilos para el sidebar */
 /* menu sidebar */
 .sidebar {
     height: 100vh; 
-    width: 0;
+    width: 250px;
     position: relative;
     /* z-index: 1;
     top: 0;
@@ -107,12 +118,25 @@ body{
 .titulo {
     font-size: 25px;
     color: var(--primary);
-    border-bottom: 1px #111b5415 solid;
+    /* border-bottom: 1px #111b5415 solid; */
 }
 
 /* estilos de tabla */
+.dt-buttons {
+    position: absolute !important;
+}
+
 .table {
     font-size: 14px;
+}
+
+/* estilos de formularios */
+input:focus, select:focus, select, input.form-control:focus, .form-control-sm:focus {
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
 }
 
 /* estilos para el footer */

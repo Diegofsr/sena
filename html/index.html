@@ -8,7 +8,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="../assets/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/index.css">
     <title>EL PINTOR PS DISTRIBUCIONES S.A.</title>
@@ -18,34 +17,33 @@
     <!-- sidebar menu lateral -->
     <main class="d-flex">
 
-        <div id="sidebar-container" class="sidebar">
-            <img class="logo" src="../assets/logo-blanco.png" alt="Logo el pintor">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#" class="menu_select d-lg-block d-none p-3"><i class="icon ion-md-home mr-2 lead"></i> Inicio</a>
-            <a href="#" class="menu_select d-lg-block d-none p-3"><i class="icon ion-md-contacts mr-2 lead"></i> Usuarios</a>
-            <a href="#" class="menu_select d-lg-block d-none p-3"><i class="icon ion-md-cube mr-2 lead"></i> Inventario</a>
-            <a href="#" class="menu_select d-lg-block d-none p-3"><i class="icon ion-md-add mr-2 lead"></i> Entradas</a>
-            <a href="#" class="menu_select d-lg-block d-none p-3"><i class="icon ion-md-remove mr-2 lead"></i> Salidas</a>
-            <a href="#"class="menu_select d-lg-block d-none p-3"><i class="icon ion-md-man mr-2 lead"></i> Clientes</a>
-            <a href="#"class="menu_select d-lg-block d-none p-3"><i class="icon ion-md-clipboard mr-2 lead"></i> Proveedores</a>
+      <div id="sidebar-container" class="sidebar">
+        <img class="logo" src="../../assets/logo-blanco.png" alt="Logo el pintor">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html" class="menu_select d-lg-block d-none p-3"><i class="fas fa-home mr-2"></i> Inicio</a>
+        <a href="../html/tablas/tablaUsuarios.html" class="menu_select d-lg-block d-none p-3"><i class="fas fa-user mr-2"></i> Usuarios</a>
+        <a href="../html/tablas/tablaInventario.html" class="menu_select d-lg-block d-none p-3"><i class="fas fa-boxes mr-2"></i> Inventario</a>
+        <a href="../html/tablas/tablaEntradas.html" class="menu_select d-lg-block d-none p-3"><i class="fas fa-plus-circle mr-2"></i> Entradas</a>
+        <a href="../html/tablas/tablaSalidas.html" class="menu_select d-lg-block d-none p-3"><i class="fas fa-minus-circle mr-2"></i> Salidas</a>
+        <a href="../html/tablas/tablaClientes.html"class="menu_select d-lg-block d-none p-3"><i class="fas fa-users mr-2"></i> Clientes</a>
+        <a href="../html/tablas/tablaProveedores.html"class="menu_select d-lg-block d-none p-3"><i class="fas fa-industry mr-2"></i> Proveedores</a>
 
-            <!-- iconos para pantalla pequeña -->
-            <a href="#" class="menu_hidden d-md-none d-block p-3"><i class="icon ion-md-home mr-2 lead"></i></a>
-            <a href="#" class="menu_hidden d-md-none d-block p-3"><i class="icon ion-md-contacts mr-2 lead"></i></a>
-            <a href="#" class="menu_hidden d-md-none d-block p-3"><i class="icon ion-md-cube mr-2 lead"></i></a>
-            <a href="#" class="menu_hidden d-md-none d-block p-3"><i class="icon ion-md-add mr-2 lead"></i></a>
-            <a href="#" class="menu_hidden d-md-none d-block p-3"><i class="icon ion-md-remove mr-2 lead"></i></a>
-            <a href="#"class="menu_hidden d-md-none d-block p-3"><i class="icon ion-md-man ml-1 lead"></i></a>
-            <a href="#"class="menu_hidden d-md-none d-block p-3"><i class="icon ion-md-clipboard mr-2 lead"></i></a>
-        </div>
-          
-        <!-- boton para abrir el sidebar -->
-        <div id="main">
-            <button class="openbtn p-0" onclick="openNav()"><i class="icon ion-md-play"></i></button>
-        </div>
+        <!-- iconos para pantalla pequeña -->
+        <a href="index.html" class="menu_hidden d-md-none d-block p-3"><i class="fas fa-home"></i></a>
+        <a href="../html/tablas/tablaUsuarios.html" class="menu_hidden d-md-none d-block p-3"><i class="fas fa-user"></i></a>
+        <a href="../html/tablas/tablaInventario.html" class="menu_hidden d-md-none d-block p-3"><i class="fas fa-boxes"></i></a>
+        <a href="../html/tablas/tablaEntradas.html" class="menu_hidden d-md-none d-block p-3"><i class="fas fa-plus-circle"></i></a>
+        <a href="../html/tablas/tablaSalidas.html" class="menu_hidden d-md-none d-block p-3"><i class="fas fa-minus-circle"></i></a>
+        <a href="../html/tablas/tablaClientes.html"class="menu_hidden d-md-none d-block p-3"><i class="fas fa-users"></i></i></a>
+        <a href="../html/tablas/tablaProveedores.html"class="menu_hidden d-md-none d-block p-3"><i class="fas fa-industry mr-2"></i></a>
+    </div>
+      
+    <!-- boton para abrir el sidebar -->
+    <div id="main">
+        <button class="openbtn p-0" onclick="openNav()"><i class="fas fa-angle-right"></i></button>
+    </div>
     
         <!-- navbar superior -->
-        
         <div class="w-100">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand pl-2 font-weight-bold d-lg-block d-none text-secondary" href="#">Sistema de Gestión de Inventarios</a>
@@ -77,6 +75,8 @@
             <div class="content">
                 <section>
                     <div class="container">
+
+                        <!-- recuadros con informacion adicional -->
                         <div class="row">
                             <div class="col-sm-12 col-md-6 col-lg-3">
                                 <div class="information bg-danger text-light font-weight-bold mt-3 p-2">
@@ -117,12 +117,14 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- tabla con resumen del stock -->
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="col-lg-12 mt-5 text-center">
                                     <h4>Resumen Stock</h4>
                                 </div>
-                                <table class="table table-sm text-center">
+                                <table class="table table-sm">
                                     <thead class="thead-light">
                                       <tr>
                                         <th scope="col">#</th>
@@ -182,14 +184,17 @@
                 </section>
             </div>
         </div>
+
+        <!-- pie de pagina de la interfaz -->
         <footer>
           <div class="footer d-lg-block d-none">
-              <p> &copy;2022 <strong>SIGI</strong>. Designed, Developed and Built by <strong><a href="#">SENA®</a></strong></p>
+              <p> &copy;2022 <strong>SIGI</strong>. Designed, Developed and Built by <strong><a href="http://oferta.senasofiaplus.edu.co/sofia-oferta/" target="_blank">SENA®</a></strong></p>
           </div>
         </footer>
     </main>
 
-
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/9e84f8af54.js" crossorigin="anonymous"></script>
     <script src="../javascript/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
